@@ -1,7 +1,10 @@
 package Base;
 
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class BaseLibrary extends Data{
@@ -20,8 +23,9 @@ public class BaseLibrary extends Data{
         webDriver.switchTo().alert().accept();
         return alertText;
     }
-
-
-
+    @Attachment(value = "Screenshot", type = "image/png")
+    public byte[] screenshot() {
+        return ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
+    }
 }
 

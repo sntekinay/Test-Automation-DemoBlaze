@@ -10,6 +10,7 @@ public class SignInPage extends BaseTest {
     public SignInPage clickSignIn()  throws InterruptedException{
         webDriver.findElement(By.id("signin2")).click();
         Thread.sleep(2000);
+        screenshot();
         return this;
     }
     @Step("Unique Username alanı doldurulur.")
@@ -30,6 +31,7 @@ public class SignInPage extends BaseTest {
     @Step("Register Butonuna tıklanır.")
     public SignInPage clickRegister()  throws InterruptedException{
         webDriver.findElement(By.cssSelector("button[onclick='register()']")).click();
+        screenshot();
         Thread.sleep(2000);
         return this;
     }

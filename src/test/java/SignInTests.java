@@ -1,9 +1,11 @@
 import Base.BaseTest;
 
+import Pages.SignInPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SignInTests extends BaseTest {
+    SignInPage signInPage = new SignInPage();
 
     @Test(description = "Yeni kullanıcı kaydı başarılı.")
     public void SignInSuccessfull() throws InterruptedException {

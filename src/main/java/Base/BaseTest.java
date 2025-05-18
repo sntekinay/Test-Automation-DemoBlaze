@@ -7,11 +7,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTest extends BaseLibrary{
-    public static LogInPage logInPage =new LogInPage();
-    public static SignInPage signInPage = new SignInPage();
+    //public static LogInPage logInPage =new LogInPage();
+    //public static SignInPage signInPage = new SignInPage();
 
     @BeforeMethod
     public void openBrowser(){
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         webDriver = new ChromeDriver();
         webDriver.manage().window().maximize();
         webDriver.get("https://www.demoblaze.com/");

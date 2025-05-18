@@ -1,8 +1,10 @@
 import Base.BaseTest;
+import Pages.LogInPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseTest {
+    LogInPage logInPage =new LogInPage();
 
     @Test(description = "Başarılı kullanıcı girişi ")
     public void loginSuccessful() throws InterruptedException {
@@ -11,7 +13,9 @@ public class LoginTests extends BaseTest {
                 .fillPassword()
                 .clickLogInInside();
         String welcomeText = getWelcomeText();
+        screenshot();
         Assert.assertEquals(welcomeText, welcomeTextMsg);
+
     }
 
     @Test(description = "Başarısız kullanıcı girişi- şifre yanlış")
@@ -20,8 +24,11 @@ public class LoginTests extends BaseTest {
                 .fillUsername()
                 .fillWrongPassword()
                 .clickLogInInside();
+
         String alertText = getAndAcceptAlertText();
+        screenshot();
         Assert.assertEquals(alertText, wrongPassMsg);
+
     }
 
     @Test(description = "Başarısız kullanıcı girişi - user does not exist")
@@ -30,7 +37,9 @@ public class LoginTests extends BaseTest {
                 .fillNotExistUsername()
                 .fillPassword()
                 .clickLogInInside();
+
         String alertText = getAndAcceptAlertText();
+        screenshot();
         Assert.assertEquals(alertText, notExistUserMsg);
     }
 }

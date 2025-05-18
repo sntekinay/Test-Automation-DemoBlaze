@@ -16,7 +16,7 @@ public class LogInPage extends BaseTest {
         webDriver.findElement(By.id("loginusername")).sendKeys(username);
         return this;
     }
-    @Step("Unique Username alanı doldurulur.")
+    @Step("Not exist Username alanı doldurulur.")
     public LogInPage fillNotExistUsername(){
         webDriver.findElement(By.id("loginusername")).sendKeys(notExistUsername);
         return this;
