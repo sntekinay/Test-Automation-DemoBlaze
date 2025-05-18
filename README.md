@@ -13,7 +13,7 @@ Bu proje, [DemoBlaze](https://www.demoblaze.com/) web uygulamasının temel kull
 
 ## 🧪 Test Senaryoları
 ### Manuel Test Senaryoları
-11 adet manuel test senaryosu oluşturulmuştur.
+10 adet manuel test senaryosu oluşturulmuştur.
 ### Otomasyon Test Senaryoları 
 ####  Login Testleri (`LoginTests.java`)
 - Geçerli kullanıcı ile başarılı giriş
