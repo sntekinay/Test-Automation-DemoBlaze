@@ -8,7 +8,7 @@ Bu proje, [DemoBlaze](https://www.demoblaze.com/) web uygulamasının temel kull
 -  **Selenium WebDriver** – UI test otomasyonu
 -  **Maven** – Bağımlılık yönetimi
 -  **Allure** – Test raporlama aracı
-- ⚙ **Jenkins** – CI/CD entegrasyonu
+-  **Jenkins** – CI/CD entegrasyonu
 -  **Java** – Programlama dili
 
 ## 🧪 Test Senaryoları
