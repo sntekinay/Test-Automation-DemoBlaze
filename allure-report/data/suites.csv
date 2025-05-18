@@ -1,0 +1,6 @@
+"DESCRİPTİON","DURATİON İN MS","NAME","PARENT SUİTE","START TİME","STATUS","STOP TİME","SUB SUİTE","SUİTE","TEST CLASS","TEST METHOD"
+"","4285","Yeni kullanıcı kaydı başarılı.","Surefire suite","Sun May 18 19:39:18 TRT 2025","passed","Sun May 18 19:39:22 TRT 2025","SignInTests","Surefire test","SignInTests","SignInSuccessfull"
+"","5243","Başarılı kullanıcı girişi ","Surefire suite","Sun May 18 19:39:04 TRT 2025","passed","Sun May 18 19:39:09 TRT 2025","LoginTests","Surefire test","LoginTests","loginSuccessful"
+"","5255","Başarısız kullanıcı girişi- şifre yanlış","Surefire suite","Sun May 18 19:39:11 TRT 2025","passed","Sun May 18 19:39:16 TRT 2025","LoginTests","Surefire test","LoginTests","loginUnsuccesful"
+"","5308","Başarısız kullanıcı girişi - user does not exist","Surefire suite","Sun May 18 19:38:56 TRT 2025","passed","Sun May 18 19:39:01 TRT 2025","LoginTests","Surefire test","LoginTests","LoginUserDoesNotExist"
+"","4337","Daha önce kayıtlı kullanıcı adıyla tekrar kayıt olunmaz.","Surefire suite","Sun May 18 19:39:23 TRT 2025","passed","Sun May 18 19:39:28 TRT 2025","SignInTests","Surefire test","SignInTests","signUPWithExistingUser"
