@@ -41,9 +41,5 @@ Test çalıştırmalarının ardından **Allure** ile otomatik olarak rapor olu�
 
 
 ##  Proje Nasıl Çalıştırılır?
-
-1. **Projeyi klonla:**
-   ```bash
-   git clone https://github.com/sntekinay/Test-Automation-DemoBlaze.git
    cd Test-Automation-DemoBlaze
    cmd >> allure serve
